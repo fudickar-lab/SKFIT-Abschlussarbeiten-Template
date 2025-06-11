@@ -1,0 +1,34 @@
+% Change to german for thesis in German
+\documentclass[english, version-2022-01]{uzl-thesis}
+\usepackage{uzl-thesis-patches}
+\usepackage{multirow}
+
+\UzLStyle{alegrya modern design} % Commented out to avoid font conflicts with unicode-math
+
+\UzLThesisSetup{
+	Masterarbeit,
+	Verfasst = {am}{Institut für Medizinische Biometrie und Statistik, Sektion für klinische Forschungs-IT},
+	Titel auf Deutsch = {Tolle Abschlussarbeit auf Deutsch},
+	Titel auf Englisch = {Great thesis in English},
+	Autor = {Max Mustermann},
+	Betreuer = {Prof. Dr. habil. Sebastian Fudickar},
+	Studiengang = {Medizinische Informatik},
+	Datum = {\today},
+	Abstract = \input{./otherincludes/Abstract},
+	Zusammenfassung = \input{./otherincludes/Zusammenfassung},
+	Numerische Bibliographie
+}
+
+% here you can change the name and path of your bib file
+\addbibresource{./otherincludes/Referenzen.bib}
+
+\begin{document}
+	% add or remove any unwanted chapters
+	\input{./chapters/Introduction.tex}
+	\input{./chapters/Background.tex}
+	\input{./chapters/Methods.tex}
+	\input{./chapters/Results.tex}
+	\input{./chapters/Discussion.tex}
+	\input{./chapters/Conclusion.tex}
+	\input{./otherincludes/Anhang.tex}
+\end{document}
