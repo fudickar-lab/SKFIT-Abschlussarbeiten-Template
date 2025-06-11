@@ -1,0 +1,1 @@
+# SKFIT-Abschlussarbeiten-Template
